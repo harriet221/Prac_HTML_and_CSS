@@ -1,0 +1,114 @@
+:root {
+    --body-bg: white;
+    --gggl-bg: black;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: var(--body-bg);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.gggl,
+.gggl::before,
+.gggl::after {
+    background: var(--gggl-bg);
+    width: 150px;
+    height: 15px;
+    position: absolute;
+}
+.gun {
+    top: 50px;
+    left: 50px;
+    transform: rotate(135deg);
+}
+.gam {
+    top: 50px;
+    right: 50px;
+    transform: rotate(225deg);
+}
+.lee {
+    bottom: 50px;
+    left: 50px;
+    transform: rotate(225deg);
+}
+.gon {
+    bottom: 50px;
+    right: 50px;
+    transform: rotate(135deg);
+}
+.gggl::before,
+.gggl::after {
+    content: "";
+}
+.gggl::before {
+    top: 30px;
+}
+.gggl::after {
+    top: -30px;
+}
+
+.redblue {
+    background: var(--body-bg);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: 1s;
+}
+
+.halfred {
+    width: 200px;
+    height: 100px;
+    border-top-right-radius: 97px;
+    border-top-left-radius: 97px;
+    background-color: red;
+}
+.halfblue {
+    width: 200px;
+    height: 100px;
+    border-bottom-right-radius: 97px;
+    border-bottom-left-radius: 97px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 90px;
+}
+.red {
+    background-color: red;
+    top: 50px;
+    left: 0;
+}
+.blue {
+    background-color: blue;
+    bottom: 50px;
+    right: 0;
+}
+
+.toggle:checked ~ .redblue {
+    transform: rotate(-360deg);
+}
+.toggle {
+    opacity: 0;
+}

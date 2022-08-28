@@ -1,0 +1,16 @@
+@import url("padding.css");
+
+body {
+    background-color: palevioletred;
+}
+@media (max-width: 1200px) {
+    body {
+        background-color: burlywood;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: olivedrab;
+    }
+}

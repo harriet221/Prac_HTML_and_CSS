@@ -1,0 +1,51 @@
+<!-- 동적 가상 클래스 -->
+
+<style>
+
+    /*클릭시 변화*/
+    button:active {
+        color: blue;
+    }
+
+    /*방문시 변화*/
+    a:visited {
+        color: violet;
+    }
+    
+    /*비활성화*/
+    input:disabled {
+        background-color: gray;
+        /*글씨 검정색 설정 하고싶은데 disabled에선 안되나봄.*/
+    }
+
+    /*마우스 상호작용*/
+    span {
+        background-color: plum;
+    }
+    span:hover {
+        background-color: goldenrod;
+    }
+
+    /*클릭시 반응*/
+    .red-input:focus {
+        background: rgba(255, 34, 0, 0.297);
+        color: red;
+    }
+    .blue-input:focus {
+        background: rgba(0, 179, 255, 0.726);
+        color: blue;
+    }
+
+</style>
+
+<!-- 적용 대상들 -->
+<p>
+    <button>클릭하세요</button>
+</p>
+<body>
+    <a href="https://www.naver.com/">Naver Website</a> <br /><br />
+    <input type="text" placeholder="Name" disabled> <br /><br />
+    <span>이 곳에 마우스를 올려놓으세요</span> <br /><br />
+    <input class="red-input" value="클릭하면 빨갛게 됩니다." />
+    <input class="blue-input" value="클릭하면 파랗게 됩니다." />
+</body>

@@ -1,0 +1,22 @@
+<style>
+    p:nth-of-type(2n) {
+        color: red;
+    }
+    p:nth-of-type(4n+2) {
+        font-style: italic;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div>
+        <div>여기는 카운트되지 않는다</div>
+        <p>1문단은 2n이 아니며 4n+2도 아니다</p>
+        <p>2문단은 2n이며 4n+2이다</p>
+        <p>3문단은 2n이 아니며 4n+2도 아니다</p>
+        <p>4문단은 2n이며 4n+2은 아니다</p>
+        <p>5문단은 2n이 아니며 4n+2도 아니다</p>
+        <span>여기도 카운트되지 않는다.</span>
+        <p>6문단은 2n이며 4n+2이다</p>
+        <p>7문단은 2n이 아니며 4n+2도 아니다</p>
+    </div>
+</body>

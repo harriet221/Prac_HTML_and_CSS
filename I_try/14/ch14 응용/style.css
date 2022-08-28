@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.outheader {
+    width: 310px;
+    height: 50px;
+    background-color: maroon;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+}
+.outnav {
+    width: 80px;
+    height: 200px;
+    background-color: firebrick;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.outfooter {
+    width: 310px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 10px;
+    margin-top: 10px;    
+}
+
+.outarticle {
+    width: 220px;
+    height: 200px;
+
+}
+.inheader {
+    width: 100%;
+    height: 65px;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.box {
+    width: 220px;
+    height: 130px;
+    display: flex;
+}
+.innav {
+    width: 50px;
+    height: 130px;
+    background-color: orangered;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.box2 {
+    width: 165px;
+    height: 130px;
+    /* 여기 display: flex 넣으면 small들과 bottom이 한줄 서기 함*/
+}
+
+.box3{
+    width: 165px;
+    height: 50px;
+    display: flex;
+}
+.small {
+    width: 53px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.one,
+.two {
+    margin-right: 5px;
+}
+
+.box4 {
+    width: 165px;
+    height: 70px;
+    display: flex;
+}
+.bottom {
+    width: 165px;
+    height: 75px;
+    background-color: darkorange;
+    border-radius: 10px;
+    margin-top: 5px;
+}

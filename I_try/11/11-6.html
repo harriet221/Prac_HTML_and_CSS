@@ -1,0 +1,27 @@
+<style>
+    p:first-child {
+        color: lime;
+        background-color: black;
+        padding: 5px;
+    }
+
+    p:last-child {
+        color: lemonchiffon;
+        background-color: darkgrey;
+        padding: 2px;
+    }
+</style>
+
+<body>
+    <div>
+        <p>:first-child입니다. 그리고 last-child가 아닙니다.</p>
+        <p>:first-child가 아닙니다. 그리고 last-child입니다.</p>
+    </div>
+    <br />
+    <div>
+        <p>얘는 첫째이면서 p 태그가 맞습니다.</p>
+        <h3>얘는 첫번째에 있어도 P 태그가 아니라서 선택되지 않습니다.</h3>
+        <p>하지만 이건 어떨까요.</p>
+        <p>막내는 여기 있는 것 입니다.</p>
+    </div>
+</body>

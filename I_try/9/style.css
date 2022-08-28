@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    /* 디폴트 : 가장 긴 요소의 길이 */
+}
+body { /* 플렉스 박스 rule : 부모에 명시하라 */
+    display: flex;
+    /* display 디폴트 : block */
+
+    flex-direction: column-reverse;
+
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+#middle {
+    background-color: seagreen;
+}
